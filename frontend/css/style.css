@@ -1,3 +1,4 @@
+/* index page style */
 header {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -11,9 +12,16 @@ nav {
 }
 
 .logo {
-    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
     font-weight: bold;
-    color: #333;
+}
+
+.logo-img {
+    width: 40px; /* Adjust the size of the logo image */
+    height: auto;
+    margin-right: 10px; /* Space between the logo and the text */
 }
 
 .nav-links {
@@ -53,8 +61,8 @@ h1 {
     background-color: #f8f9fa;
 }
 
-#hero h1 {
-    font-size: 2.5em;
+#hero h2 {
+    /* font-size: 2.5em; */
     margin-bottom: 10px;
     color: #2596be;
 }
@@ -87,8 +95,16 @@ h1 {
     background-color: #e9ecef;
 }
 
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 .feature-card {
-    background-color: #fff;
+    background-color: rgba(37, 150, 190, 0.3);
+    /* background-color: #2596be; */
+    /* opacity: 0.5; */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -196,4 +212,36 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+
+
+/* Topics Page Styles */
+#topics-intro {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+#topics-list {
+    margin: 20px;
+    padding: 10px;
+}
+
+#topics-list ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+#topics-list li a {
+    text-decoration: none;
+    color: #2596be;
+    font-weight: bold;
+}
+
+#topics-list li a:hover {
+    text-decoration: underline;
+    color: #176a92;
 }
